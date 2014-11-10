@@ -23,25 +23,30 @@
 	<canvas id="estrella"></canvas>
 
 	<script>
+
 		var cuadrado  = document.getElementById('cuadrado');
 		var circulo   = document.getElementById('circulo');
 		var triangulo = document.getElementById('triangulo');
 		var texto     = document.getElementById('texto');
 		var estrella  = document.getElementById('estrella');
+
 		var cnvs1 = cuadrado.getContext('2d');
 		var cnvs2 = circulo.getContext('2d');
 		var cnvs3 = triangulo.getContext('2d');
 		var cnvs4 = texto.getContext('2d');
 		var cnvs5 = estrella.getContext('2d');
+
 		// Cuadrado
 		cnvs1.fillStyle = '#751e53';
 		cnvs1.fillRect(0,0,100,100);
+
 		// Círculo
 		cnvs2.fillStyle = '#751e53';
 		cnvs2.beginPath();
 		cnvs2.arc(60,60,60,0,Math.PI*2, true);
 		cnvs2.closePath();
 		cnvs2.fill();
+
 		// Triángulo
 		cnvs3.fillStyle = '#751e53';
 		cnvs3.beginPath();
@@ -49,12 +54,14 @@
 		cnvs3.lineTo(110,10);
 		cnvs3.lineTo(210,110);
    		cnvs3.fill();
+
    		// Texto
    		cnvs4.fillStyle = '#751e53';
    		cnvs4.font="60px Verdana";
 		cnvs4.fillText("ADSI",20,80);
 		cnvs4.rect(0,0,200,120);
 		cnvs4.stroke();
+
 		// Estrella
 		cnvs5.fillStyle = '#751e53';
 		cnvs5.translate(50, 100);

@@ -1,3 +1,3 @@
-h3, p, hr {
-   display: none;
+h3, hr, img {
+	display: none;
 }
